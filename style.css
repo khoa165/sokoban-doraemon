@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+table {
+  width: 660px;
+  border: 10px solid black;
+  background: white;
+}
+
+tr {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+td {
+  background: url("wall.jpeg") center center no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.doraemon {
+  background: center center no-repeat url("doraemon.png"),
+              center center no-repeat url("wall.jpeg");
+  background-size: 120px, contain;
+}
+
+.nobita {
+  background: center center no-repeat url("nobita.png"),
+              center center no-repeat url("wall.jpeg");
+  background-size: 70px, contain;
+}
+
+.school {
+  background: center center no-repeat url("school.png"),
+              center center no-repeat url("wall.jpeg");
+  background-size: 80px, contain;
+}
