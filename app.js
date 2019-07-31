@@ -5,7 +5,7 @@ let boardGame = [];
 const setupBoard = () => {
   document.querySelectorAll("tr").forEach((tr) => {
     const row = [];
-    tr.document.querySelectorAll("td").forEach((td) => {
+    tr.querySelectorAll("td").forEach((td) => {
       row.push(td);
     });
     boardGame.push(row);
@@ -28,6 +28,14 @@ const checkValidMove = (doraemon, direction) => {
   } else if (direction === "ArrowLeft" && column > 1) {
     movement = [-1, 0];
   }
+  const nextPos = boardGame[row + movement[1]][column + movement[0]];
+  if (nextPos.classList.contains("takeshi")
+    || nextPos.classList.contains("school")) {
+    movement = [0, 0];
+  }
+  if (nextPos.classList.contains("nobita")) {
+    movement = [0, 0];
+  }
   return movement;
 }
 
@@ -38,11 +46,12 @@ const moveDoraemon = event => {
   const column = doraemon.cellIndex;
   // 2. Check if the game is not won yet and user clicks appropriate key.
   // 3. Move doraemon.
-  const movement = checkValidMove(doraemon, event);
+  const movement = checkValidMove(doraemon, event.key);
   const nextPos = boardGame[row + movement[1]][column + movement[0]];
-  // 4. Remove doraemon class in current cell and add it to the right cell.
+  // 5. Remove doraemon class in current cell and add it to the right cell.
   doraemon.classList.remove("doraemon");
   nextPos.classList.add("doraemon");
+
 };
 
 const startGame = () => {

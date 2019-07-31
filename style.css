@@ -38,8 +38,21 @@ td {
   background-size: 70px, contain;
 }
 
+.takeshi {
+  background: center center no-repeat url("takeshi.png"),
+              center center no-repeat url("wall.jpeg");
+  background-size: 70px, contain;
+}
+
 .school {
   background: center center no-repeat url("school.png"),
               center center no-repeat url("wall.jpeg");
   background-size: 80px, contain;
+}
+
+.nobita.school {
+  background: center center no-repeat url("nobita.png"),
+              center center no-repeat url("school.png"),
+              center center no-repeat url("wall.jpeg");
+  background-size: 70px, 80px, contain;
 }
