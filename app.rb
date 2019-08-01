@@ -17,3 +17,12 @@ set :bind, '0.0.0.0'
 get '/' do
   erb :index
 end
+
+post '/chosen_themes' do
+  redirect "/sokoban/#{params["theme"]}"
+end
+
+get '/sokoban/:theme' do
+  @theme = params["theme"]
+  erb :"#{@theme}"
+end

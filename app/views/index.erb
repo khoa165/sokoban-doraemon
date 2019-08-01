@@ -1,68 +1,53 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+  <!-- <a class="navbar-brand mx-5" href="#"><i class="far fa-list-alt"></i> RANDOM/APPS</a> -->
+  <a class="navbar-brand mx-5" href="/"><img class="logo" src="images/jigsaw.svg" alt="Kiwi standing on oval"> SOKOBAN<span class="logo-slash">/</span>THEMES</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="themes/doraemon/css/style.css">
-
-  <title>Sokoban Themes</title>
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
-    <!-- <a class="navbar-brand mx-5" href="#"><i class="far fa-list-alt"></i> RANDOM/APPS</a> -->
-    <a class="navbar-brand mx-5" href="#"><img class="logo" src="images/jigsaw.svg" alt="Kiwi standing on oval"> SOKOBAN<span class="logo-slash">/</span>THEMES</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link mx-2" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mx-0" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mx-2" href="#">Contact</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle mx-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Themes</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Doraemon</a>
-            <a class="dropdown-item" href="#">Coming soon</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Suggest your idea</a>
-          </div>
-        </li>
-      </ul>
-      <form class="form-inline input-group-sm my-0">
-        <input class="form-control mx-0" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-sm btn-outline-success mx-3" type="submit" disabled="">Search</button>
-        <a href="#" class="btn btn-sm btn-outline-primary mx-0">Create account</a>
-        <a href="#" class="btn btn-sm btn-outline-success mx-3">Log in</a>
-      </form>
-    </div>
-  </nav>
-  <div class="container d-flex justify-content-center align-items-center flex-column my-3">
-    <h1>Welcome to Sokoban games!</h1>
-    <p>This site offers you to play classic Sokoban in different themes</p>
-    <ul class="list-inline">
-      <li class="my-3"><button type="button" class="btn btn-outline-primary btn-block">Doraemon</button></li>
-      <li class="my-3"><button type="button" class="btn btn-outline-primary btn-block">Harry Potter</button></li>
-      <li class="my-3"><button type="button" class="btn btn-outline-primary btn-block">Pokemon</button></li>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link mx-2" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-0" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-2" href="#">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle mx-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Themes</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/sokoban/doraemon">Doraemon</a>
+          <a class="dropdown-item" href="/">Coming soon</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/">Suggest your idea</a>
+        </div>
+      </li>
     </ul>
+    <form class="form-inline input-group-sm my-0">
+      <input class="form-control mx-0" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-sm btn-outline-success mx-3" type="submit" disabled="">Search</button>
+      <a href="/" class="btn btn-sm btn-outline-primary mx-0">Create account</a>
+      <a href="/" class="btn btn-sm btn-outline-success mx-3">Log in</a>
+    </form>
   </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+</nav>
+<div class="container d-flex justify-content-center align-items-center flex-column my-3">
+  <h1>Welcome to Sokoban games!</h1>
+  <p>This site offers you to play classic Sokoban in different themes</p>
+  <form action="/chosen_themes" method="POST">
+    <ul class="list-inline">
+      <div class="form-group">
+        <li class="my-3"><button name="theme" value="doraemon" type="submit" class="btn btn-outline-primary btn-block">Doraemon</button></li>
+      </div>
+      <div class="form-group">
+        <li class="my-3"><button name="theme" value="harry_potter" type="submit" class="btn btn-outline-primary btn-block">Harry Potter</button></li>
+      </div>
+      <div class="form-group">
+        <li class="my-3"><button name="theme" value="pokemon" type="submit" class="btn btn-outline-primary btn-block">Pokemon</button></li>
+      </div>
+    </ul>
+  </form>
+</div>
