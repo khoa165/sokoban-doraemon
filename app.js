@@ -1,5 +1,5 @@
 let winStatus = false;
-const button = document.querySelector(".btn");
+const startGameButton = document.querySelector("#start-game");
 let boardGame = [];
 
 const setupBoard = () => {
@@ -42,9 +42,7 @@ const checkValidMove = (doraemon, direction) => {
   let movement = [0, 0];
   const row = doraemon.parentElement.rowIndex;
   const column = doraemon.cellIndex;
-  if (winStatus) {
-    return movement;
-  }
+
   if (direction === "ArrowDown" && row < boardGame.length - 1) {
     movement = [0, 1];
   } else if (direction === "ArrowUp" && row > 0) {
@@ -84,16 +82,28 @@ const checkWin = () => {
   const numSchool = document.querySelectorAll(".school").length;
   const numMatch = document.querySelectorAll(".school.nobita").length;
   if (numSchool === numMatch) {
-    const congrats = "<h1>Congratulations!</h1>";
-    document.querySelector("div.container").insertAdjacentHTML("afterbegin", congrats);
+    winStatus = true;
+    setTimeout(() => {
+      const congrats = "<h1>Congratulations!</h1>";
+      document.querySelector("div.container").insertAdjacentHTML("afterbegin", congrats);
+      startGameButton.innerText = "Play again?";
+    }, 1000);
+  }
+};
+
+const keyupAction = (event) => {
+  if (!winStatus) {
+    moveDoraemon(event);
+    checkWin();
   }
 };
 
 const startGame = () => {
+  console.log("start game now!");
+  winStatus = false;
   setupBoard();
-  document.addEventListener("keyup", moveDoraemon);
-  checkWin();
+  document.addEventListener("keyup", keyupAction);
 };
 
-button.addEventListener("click", startGame);
+startGameButton.addEventListener("click", startGame);
 
