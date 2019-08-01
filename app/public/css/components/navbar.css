@@ -1,0 +1,17 @@
+img.logo {
+  width: 25px;
+}
+
+span.logo-slash {
+  color: #ffdd67;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffdd67 !important;
+  font-weight: bold;
+}

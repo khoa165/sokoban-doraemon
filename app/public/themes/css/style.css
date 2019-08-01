@@ -1,0 +1,17 @@
+table {
+  width: 660px;
+  border: 10px solid black;
+  background: white;
+}
+
+tr {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+td {
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}

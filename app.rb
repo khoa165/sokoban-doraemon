@@ -1,4 +1,5 @@
 require "sinatra"
+require "sinatra/content_for"
 require "sinatra/reloader" if development?
 require "pry-byebug"
 require "better_errors"
