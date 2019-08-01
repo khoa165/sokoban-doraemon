@@ -1,6 +1,7 @@
 let winStatus = false;
-const startGameButton = document.querySelector("#start-game");
+const startGameButton = document.getElementById("start-game");
 let boardGame = [];
+const congrats = document.getElementById("congrats");
 
 const setupBoard = () => {
   document.querySelectorAll("tr").forEach((tr) => {
@@ -84,8 +85,8 @@ const checkWin = () => {
   if (numSchool === numMatch) {
     winStatus = true;
     setTimeout(() => {
-      const congrats = "<h1>Congratulations!</h1>";
-      document.querySelector("div.container").insertAdjacentHTML("afterbegin", congrats);
+      const congratsLine = "<h1>Congratulations!</h1>";
+      congrats.insertAdjacentHTML("afterbegin", congratsLine);
       startGameButton.innerText = "Play again?";
     }, 1000);
   }
@@ -99,7 +100,7 @@ const keyupAction = (event) => {
 };
 
 const startGame = () => {
-  console.log("start game now!");
+  congrats.innerHTML = "";
   winStatus = false;
   setupBoard();
   document.addEventListener("keyup", keyupAction);
