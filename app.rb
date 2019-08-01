@@ -25,5 +25,5 @@ end
 
 get '/sokoban/:theme' do
   @theme = params["theme"]
-  erb :"#{@theme}"
+  erb :game
 end

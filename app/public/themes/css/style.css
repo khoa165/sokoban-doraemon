@@ -1,5 +1,5 @@
 table {
-  width: 660px;
+  width: 580px;
   border: 10px solid black;
   background: white;
 }
@@ -11,7 +11,7 @@ tr {
 
 td {
   border: 1px solid black;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   cursor: pointer;
 }

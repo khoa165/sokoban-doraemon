@@ -1,0 +1,44 @@
+@import url(../../css/style.css);
+
+td {
+  background: url("../images/ground.png") center center no-repeat;
+  background-size: cover;
+}
+
+.player {
+  background: center center no-repeat url("../images/player.png"),
+              center center no-repeat url("../images/ground.png");
+  background-size: 50px, cover;
+}
+
+.box {
+  background: center center no-repeat url("../images/box.png"),
+              center center no-repeat url("../images/ground.png");
+  background-size: 45px, cover;
+}
+
+.wall {
+  background: center center no-repeat url("../images/wall.png"),
+              center center no-repeat url("../images/ground.png");
+  background-size: 80px, cover;
+}
+
+.goal {
+  background: center center no-repeat url("../images/goal.png"),
+              center center no-repeat url("../images/ground.png");
+  background-size: 120px, cover;
+}
+
+.player.goal {
+  background: center center no-repeat url("../images/player.png"),
+              center center no-repeat url("../images/goal.png"),
+              center center no-repeat url("../images/ground.png");
+  background-size: 50px, 120px, cover;
+}
+
+.box.goal {
+  background: center center no-repeat url("../images/box.png"),
+              center center no-repeat url("../images/goal.png"),
+              center center no-repeat url("../images/ground.png");
+  background-size: 45px, 120px, cover;
+}
