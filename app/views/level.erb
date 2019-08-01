@@ -1,0 +1,16 @@
+<div class="container d-flex justify-content-center align-items-center flex-column my-3">
+  <h4>Please choose available levels!</h4>
+  <form action="/sokoban/<%= @theme %>/chosen_level" method="POST">
+    <ul class="list-inline">
+      <div class="form-group">
+        <li class="my-3"><button name="level" value="1" type="submit" class="btn btn-outline-primary btn-block">Level 1</button></li>
+      </div>
+      <div class="form-group">
+        <li class="my-3"><button name="level" value="2" type="submit" class="btn btn-outline-primary btn-block">Level 2</button></li>
+      </div>
+      <div class="form-group">
+        <li class="my-3"><button name="level" value="3" type="submit" class="btn btn-outline-primary btn-block">Level 3</button></li>
+      </div>
+    </ul>
+  </form>
+</div>

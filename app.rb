@@ -19,11 +19,21 @@ get '/' do
   erb :index
 end
 
-post '/chosen_themes' do
+post '/chosen_theme' do
   redirect "/sokoban/#{params["theme"]}"
 end
 
 get '/sokoban/:theme' do
   @theme = params["theme"]
-  erb :game
+  erb :level
+end
+
+post '/sokoban/:theme/chosen_level' do
+  redirect "/sokoban/#{params["theme"]}/#{params["level"]}"
+end
+
+get '/sokoban/:theme/:level' do
+  @theme = params["theme"]
+  @level = params["level"]
+  erb :"game#{@level}"
 end
