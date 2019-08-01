@@ -29,7 +29,11 @@ const checkNobitaNextPos = (row, column, movement) => {
         nextPos.classList.remove("nobita");
         nobitaNextPos.classList.add("nobita");
       }
+    } else {
+      movement = [0, 0];
     }
+  } else {
+    movement = [0, 0];
   }
   return movement;
 };
