@@ -1,2 +1,3 @@
-# sokoban-doraemon
-Recreate classic sokoban with doraemon theme using html, css, and javascript
+# Sokoban game with different themes.
+#### Built with HTML, CSS, and JavaScript.
+Recreate classic sokoban with Doraemon, Harry Potter and Pokemon themes.
